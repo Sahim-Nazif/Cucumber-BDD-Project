@@ -20,6 +20,6 @@
 Feature: Movie Rental
 
 Scenario: Add a movie 
-Given I have a movie with name "The Marksman" and price 24
+Given I have a movie with name "The Marksman" genre "thriller" and price 24
 When I add that movie
 Then Movie with name "The Marksman" should be added
