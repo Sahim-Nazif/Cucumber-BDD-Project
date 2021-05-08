@@ -1,4 +1,4 @@
-package BDD_Cucumber_Project.BDD_Cucumber_Project;
+package bdd.cucumber.project.test;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
