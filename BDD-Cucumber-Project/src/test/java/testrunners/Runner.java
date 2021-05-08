@@ -10,8 +10,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features="src/test/java/bdd/cumcuber/project/features/MovieManagement.feature",
-       
-         glue={"stepdefinitions"}
+        glue={"stepdefinitions"},
+        plugin={"pretty"}
 )
 
 public class Runner {
