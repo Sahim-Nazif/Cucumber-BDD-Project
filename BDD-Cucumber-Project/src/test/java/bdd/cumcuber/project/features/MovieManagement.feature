@@ -19,7 +19,15 @@
 
 Feature: Movie Rental
 
+@SmokeTest
 Scenario: Add a movie 
 Given I have a movie with name "The Marksman" genre "thriller" and price 24
 When I add that movie
 Then Movie with name "The Marksman" should be added
+
+@RegularTest
+Scenario: Add another movie 
+Given I have a movie with name "Tenet" genre "action" and price 20
+When I add that movie
+Then Movie with name "The Marksman" should be added
+
