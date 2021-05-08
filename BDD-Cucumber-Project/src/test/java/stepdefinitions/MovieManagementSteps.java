@@ -19,10 +19,16 @@ public class MovieManagementSteps {
 	@When("^I add that movie$")
 	public void addMovie()  {
 	   
+		newMovie.setMovieName("The Marksman");
+		System.out.println("Step2");
 	}
 
 	@Then("^Movie with name \"([^\"]*)\" should be added$")
 	public void validate(String movieName)  {
+		
+		System.out.println(newMovie.getMovieName());
+		
+		System.out.println("Step3");
 	   
 	}
 
